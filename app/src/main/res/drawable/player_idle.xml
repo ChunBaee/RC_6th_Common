@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/player_idle_1" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_2" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_3" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_4" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_5" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_6" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_7" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_8" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_9" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_10" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_11" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_12" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_13" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_14" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_15" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_16" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_17" android:duration="66" />
+    <item android:drawable="@drawable/player_idle_18" android:duration="66" />
+</animation-list>

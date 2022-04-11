@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/effect_heal1" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal2" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal3" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal4" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal5" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal6" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal7" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal8" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal9" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal10" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal12" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal13" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal14" android:duration="50" />
+    <item android:drawable="@drawable/effect_heal15" android:duration="50" />
+
+</animation-list>

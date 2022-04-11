@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/effect_fire1" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire2" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire3" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire4" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire5" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire6" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire7" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire8" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire9" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire10" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire11" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire12" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire13" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire14" android:duration="50" />
+    <item android:drawable="@drawable/effect_fire15" android:duration="50" />
+</animation-list>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/background">
+
+        <ImageButton
+            android:id="@+id/roll_dice"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@drawable/roll_dice"
+            android:layout_marginBottom="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <TextView
+            android:id="@+id/txt_req"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REQUIRE"
+            android:textStyle="bold"
+            android:layout_marginLeft="25sp"
+            android:layout_marginBottom="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_save"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/save"
+            android:layout_marginBottom="15sp"
+            app:layout_constraintLeft_toRightOf="@id/roll_dice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_load" />
+
+        <ImageView
+            android:id="@+id/btn_load"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/folder"
+            android:layout_marginBottom="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/btn_save" />
+
+        <LinearLayout
+            android:id="@+id/layout_rv"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintBottom_toTopOf="@id/roll_dice"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintVertical_bias="0.98"
+            android:background="@drawable/diceboard_frame" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15sp"
+                android:background="@drawable/diceboard_inner_frame">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_dice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18sp"
+                    android:layout_marginTop="8.2sp"
+                    android:layout_marginBottom="11sp"
+                    android:layout_marginRight="18sp"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/item_diceframe" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginVertical="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/diceboard_inner_frame"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:src="@drawable/coin"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp" />
+
+            <TextView
+                android:id="@+id/txt_cur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURRENT"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/boss_anim"
+            android:layout_width="250sp"
+            android:layout_height="300sp"
+            android:layout_marginBottom="50sp"
+            app:layout_constraintBottom_toTopOf="@id/player_health"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:background="@drawable/boss_idle" />
+
+
+        <ImageView
+            android:id="@+id/player_anim"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            app:layout_constraintBottom_toTopOf="@id/player_health"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/player_idle" />
+
+        <ImageView
+            android:id="@+id/effect_anim"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintHorizontal_bias="0.85"/>
+
+        <ImageView
+            android:id="@+id/player_attack"
+            android:layout_width="60sp"
+            android:layout_height="30sp"
+            android:visibility="invisible"
+            android:background="@drawable/bullet_normal"
+            app:layout_constraintBottom_toTopOf="@id/player_health"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="95sp"
+            android:layout_marginBottom="50sp" />
+
+        <TextView
+            android:id="@+id/txt_boss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOSS"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/boss_health"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:layout_marginTop="5sp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="10000"
+            android:progress="10000"
+            android:progressTint="@color/red"
+            android:scaleY="5"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintHeight_percent="0.03"
+            app:layout_constraintTop_toBottomOf="@id/txt_boss"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/player_health"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressTint="#1DDB16"
+            android:scaleY="3"
+            android:max="1000"
+            android:progress="1000"
+            android:layout_marginBottom="5sp"
+            app:layout_constraintHeight_percent="0.03"
+            app:layout_constraintWidth_percent="0.85"
+            app:layout_constraintBottom_toTopOf="@id/layout_rv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/boss_idle_1" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_2" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_3" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_4" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_5" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_6" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_7" android:duration="100" />
+    <item android:drawable="@drawable/boss_idle_8" android:duration="100" />
+
+</animation-list>

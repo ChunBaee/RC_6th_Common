@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/effect_elec1" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec2" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec3" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec4" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec5" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec6" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec7" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec8" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec9" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec10" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec11" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec12" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec13" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec14" android:duration="50" />
+    <item android:drawable="@drawable/effect_elec15" android:duration="50" />
+</animation-list>
