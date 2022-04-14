@@ -46,3 +46,9 @@
 
 🤦🏻 RecyclerView 의 ViewHolder 에서 주사위 타입별로 이미지를 띄워주는 방식이었는데 else (즉 다시 아무것도 없어진 상태) 를 설정하지 않아 생긴 이슈였다. else → “빈 공백 이미지" 로 설정해주었더니 해결되었다.
 
+
+
+<img width="300" alt="스크린샷_2022-02-10_오후_3 20 09" src="https://user-images.githubusercontent.com/80454599/163405763-2195d8c9-f4d4-4772-8ea2-a5e350bd27fa.png">
+
+<img width="300" alt="스크린샷_2022-02-10_오후_3 21 41" src="https://user-images.githubusercontent.com/80454599/163405781-f8781840-3d64-4d7b-a999-affd79637e5e.png">
+
